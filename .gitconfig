@@ -3,3 +3,19 @@
 	name = Dylan Mann
 [help]
 	autocorrect = 1
+[color "status"]
+	added = yellow
+	changed = cyan
+	untracked = red 
+[status]
+	showUntrackedFiles = all
+[color]
+	ui = auto
+[advice]
+	statusHints = false
+[merge]
+	conflictstyle = diff3
+[branch]
+	autosetupmerge = true
+[github]
+	user = dylanmann
