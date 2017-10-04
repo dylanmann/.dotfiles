@@ -1,4 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/dylan/380/fall2016/tools/canvas_github'
-let g:netrw_dirhist_2='/home/dylan/CIS551'
