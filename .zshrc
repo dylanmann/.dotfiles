@@ -126,3 +126,5 @@ alias vdir='ls --color=auto --format=long'
 
 # OPAM configuration
 . /home/dylan/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+fortune -s | cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1)
