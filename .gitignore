@@ -1,11 +1,10 @@
-.oh-my-zsh/*
-.ssh/*
 *
 !.*
+.oh-my-zsh/*
+.ssh/*
 *history
-.ICEauthority
+.*authority
 .RData
-.Xauthority
 .dircolors
 .dmrc
 .gksu.lock
@@ -15,10 +14,8 @@
 .vim/.netrwhist
 .viminfo
 .wget-hsts
-.xsession-errors
-.xsession-errors.old
+.xsession-errors*
 .z
 .zcompdump
 .zcompdump-Dylan-Ubuntu-5.2
 .zsh-update
-
