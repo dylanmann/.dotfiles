@@ -59,7 +59,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git, lolcat)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -127,4 +127,4 @@ alias vdir='ls --color=auto --format=long'
 # OPAM configuration
 . /home/dylan/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
-fortune -s | cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1)
+fortune -s | cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1) | lolcat
