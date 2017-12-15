@@ -10,7 +10,7 @@ eval $(thefuck --alias --enable-experimental-instant-mode)
 DEFAULT_USER=dylan
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/dylan/.oh-my-zsh
+export ZSH=/home/dylan/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -18,7 +18,7 @@ DEFAULT_USER=dylan
 ZSH_THEME="agnoster2"
 
 # Uncomment the following line to use case-sensitive completion.
-CASE_SENSITIVE="true"
+# CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
