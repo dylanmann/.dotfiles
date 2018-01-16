@@ -1,0 +1,7 @@
+{
+    "editor.formatOnSave": true,
+    "files.autoSave": "onFocusChange",
+    "window.zoomLevel": 1,
+    "editor.fontFamily": "'Fira Code Retina', 'monospace'",
+    "editor.fontLigatures": true,
+}
