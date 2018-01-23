@@ -95,13 +95,13 @@ alias gb="git branch"
 alias gc="git commit -am"
 alias gs="git status"
 
-SSHAGENT=/usr/bin/ssh-agent
-SSHAGENTARGS="-s"
-if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
-        eval `$SSHAGENT $SSHAGENTARGS` > /dev/null
-        trap "kill $SSH_AGENT_PID" 0
-fi
-ssh-add ~/.ssh/github > /dev/null 2>&1
+#SSHAGENT=/usr/bin/ssh-agent
+#SSHAGENTARGS="-s"
+#if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
+#        eval `$SSHAGENT $SSHAGENTARGS` > /dev/null
+#        trap "kill $SSH_AGENT_PID" 0
+#fi
+#ssh-add ~/.ssh/github > /dev/null 2>&1
 
 alias rm='rm -i'
 alias cp='cp -i'
