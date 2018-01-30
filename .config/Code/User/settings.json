@@ -1,5 +1,5 @@
 {
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "files.autoSave": "onFocusChange",
     "window.zoomLevel": 1,
     "editor.fontFamily": "'Fira Code Retina', 'monospace'",
@@ -7,4 +7,6 @@
     "editor.rulers": [
         80
     ],
+    "ocaml.merlinPath": "/home/dylan/.opam/system/bin/ocamlmerlin",
+    "reason.path.ocamlmerlin": "/home/dylan/.opam/system/bin/ocamlmerlin"
 }

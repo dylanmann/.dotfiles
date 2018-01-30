@@ -19,3 +19,5 @@
 	autosetupmerge = true
 [github]
 	user = dylanmann
+[core]
+	excludesfile = /home/dylan/.gitignore_global
