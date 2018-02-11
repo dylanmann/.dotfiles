@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=/home/dylan/.opam/system/bin/:$PATH
+export PATH=/home/dylan/.local/bin:/home/dylan/.opam/system/bin/:$PATH
 export VISUAL=subl
 export EDITOR=vim
 
@@ -59,7 +59,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(last-working-dir zsh-autosuggestions git lolcat)
+plugins=(zsh-syntax-highlighting last-working-dir zsh-autosuggestions git lolcat)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -125,9 +125,9 @@ alias open='xdg-open'
 alias dir='ls --color=auto --format=vertical'
 alias vdir='ls --color=auto --format=long'
 
+source /etc/zsh_command_not_found
+
 # OPAM configuration
 . /home/dylan/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
-
-source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  
 
 fortune -s | cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1) | lolcat
