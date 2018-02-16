@@ -16,6 +16,5 @@
 .wget-hsts
 .xsession-errors*
 .z
-.zcompdump
-.zcompdump-Dylan-Ubuntu-5.2
+.zcompdump*
 .zsh-update

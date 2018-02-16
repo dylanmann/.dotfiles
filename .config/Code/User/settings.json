@@ -7,6 +7,6 @@
     "editor.rulers": [
         80
     ],
-    "ocaml.merlinPath": "/home/dylan/.opam/system/bin/ocamlmerlin",
-    "reason.path.ocamlmerlin": "/home/dylan/.opam/system/bin/ocamlmerlin"
+    "reason.path.ocamlmerlin": "/home/dylan/.opam/system/bin/ocamlmerlin",
+    "verilog.linting.linter": "iverilog"
 }
