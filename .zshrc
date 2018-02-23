@@ -1,7 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/home/dylan/.local/bin:/home/dylan/.opam/system/bin/:$PATH
-export VISUAL=subl
+export VISUAL=code
 export EDITOR=vim
 
 . /bin/z.sh
