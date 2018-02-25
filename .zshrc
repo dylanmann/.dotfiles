@@ -130,4 +130,18 @@ source /etc/zsh_command_not_found
 . /home/dylan/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 # greeting on login
-fortune -s | cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1) | lolcat
+greeting() {
+  cowfile=$(find /usr/share/cowsay/cows/* | shuf -n1)
+  cow=$(basename $cowfile .cow)
+
+  # hardcoded list of cowfiles with their own colors
+  # only an issue because of cows from https://github.com/paulkaefer/cowsay-files
+  fancy=('bender' 'banjo-kazooie' 'bob' 'dog' 'err' 'gene' 'ghost' 'head' 'homer' 'ghost' 'ignignokt' 'linda' 'louise' 'meeseeks' 'mooninites' 'pikachu' 'prof' 'rick-and-morty' 'tina' 'walter' 'yoda' 'zoidberg')
+
+  if (( ${fancy[(I)$cow]} ))
+  then fortune -s | cowsay -f $cow
+  else fortune -s | cowsay -f $cow | lolcat
+  fi
+}
+
+greeting
