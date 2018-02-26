@@ -123,6 +123,8 @@ alias getclip="xclip -selection c -o"
 alias dir='ls --color=auto --format=vertical'
 alias vdir='ls --color=auto --format=long'
 
+REPORTTIME=5
+
 # command not found info for apt
 source /etc/zsh_command_not_found
 
