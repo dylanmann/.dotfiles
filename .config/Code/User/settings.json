@@ -8,5 +8,9 @@
         80
     ],
     "reason.path.ocamlmerlin": "/home/dylan/.opam/system/bin/ocamlmerlin",
-    "verilog.linting.linter": "iverilog"
+    "verilog.linting.linter": "iverilog",
+    "vscode_custom_css.imports": [
+        "file:///home/dylan/.vscodestyles.css"
+    ],
+    "workbench.iconTheme": "vscode-great-icons"
 }

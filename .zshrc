@@ -111,6 +111,8 @@ alias mv='mv -i'
 alias df='df -h'
 alias du='du -h'
 
+alias vi="vim"
+
 # Misc :)
 alias less='less -r'                          # raw control characters
 alias whence='type -a'                        # where, of a sort
