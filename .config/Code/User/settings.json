@@ -12,5 +12,6 @@
     "vscode_custom_css.imports": [
         "file:///home/dylan/.vscodestyles.css"
     ],
-    "workbench.iconTheme": "vscode-great-icons"
+    "workbench.iconTheme": "vscode-great-icons",
+    "gitlens.currentLine.enabled": false
 }
