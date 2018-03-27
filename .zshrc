@@ -9,6 +9,8 @@ eval $(thefuck --alias --enable-experimental-instant-mode)
 
 DEFAULT_USER=dylan
 
+setopt histignorespace
+
 # Path to your oh-my-zsh installation.
 export ZSH=/home/dylan/.oh-my-zsh
 

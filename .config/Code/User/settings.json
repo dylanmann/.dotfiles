@@ -2,7 +2,7 @@
     "editor.formatOnSave": false,
     "files.autoSave": "onFocusChange",
     "window.zoomLevel": 1,
-    "editor.fontFamily": "'Fira Code Retina', 'monospace'",
+    "editor.fontFamily": "'Fira Code Retina', 'Droid Sans Mono', 'monospace', monospace",
     "editor.fontLigatures": true,
     "editor.rulers": [
         80
@@ -13,5 +13,6 @@
         "file:///home/dylan/.vscodestyles.css"
     ],
     "workbench.iconTheme": "vscode-great-icons",
-    "gitlens.currentLine.enabled": false
+    "gitlens.currentLine.enabled": false,
+    "java.errors.incompleteClasspath.severity": "ignore"
 }
