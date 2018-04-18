@@ -1,13 +1,13 @@
 {
     "editor.formatOnSave": false,
     "files.autoSave": "onFocusChange",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
     "editor.fontFamily": "'Fira Code Retina', 'Droid Sans Mono', 'monospace', monospace",
     "editor.fontLigatures": true,
     "editor.rulers": [
         80
     ],
-    "reason.path.ocamlmerlin": "/home/dylan/.opam/system/bin/ocamlmerlin",
+    "reason.codelens.enabled": true,
     "verilog.linting.linter": "iverilog",
     "vscode_custom_css.imports": [
         "file:///home/dylan/.vscodestyles.css"

@@ -21,3 +21,4 @@
 .vsce
 .yo-rc-global.json
 .java/.userPrefs/.user*
+.apport-ignore.xml

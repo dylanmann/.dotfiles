@@ -1,11 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/home/dylan/.local/bin:/home/dylan/.opam/system/bin/:$PATH
-export VISUAL=code
 export EDITOR=vim
 
 . /bin/z.sh
-eval $(thefuck --alias --enable-experimental-instant-mode)
 
 DEFAULT_USER=dylan
 
@@ -57,33 +55,19 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(zsh-syntax-highlighting last-working-dir zsh-autosuggestions git lolcat)
 
 source $ZSH/oh-my-zsh.sh
 
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=10"
+
+eval $(thefuck --alias)
+
+
 # User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='subl'
-fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -91,19 +75,9 @@ fi
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gb="git branch"
 alias gc="git commit -am"
 alias gs="git status"
-
-#SSHAGENT=/usr/bin/ssh-agent
-#SSHAGENTARGS="-s"
-#if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
-#        eval `$SSHAGENT $SSHAGENTARGS` > /dev/null
-#        trap "kill $SSH_AGENT_PID" 0
-#fi
-#ssh-add ~/.ssh/github > /dev/null 2>&1
 
 alias rm='rm -i'
 alias cp='cp -i'
@@ -134,6 +108,8 @@ source /etc/zsh_command_not_found
 
 # OPAM configuration
 . /home/dylan/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+alias pip3_update='pip3 freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U'
 
 # greeting on login
 greeting() {
